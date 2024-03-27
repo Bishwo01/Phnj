@@ -14,21 +14,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   }
 });
 const video = document.getElementById('videoBG');
-const muteButton = document.getElementById('muteButton');
-
-muteButton.addEventListener('click', () => {
-  if (video.muted) {
-    video.muted = false;
-    muteButton.textContent = 'Mute';
-  } else {
-    video.muted = true;
-    muteButton.textContent = 'Unmute';
-  }
-});
-
-
-
-
 
 const inputText = document.getElementById('inputText');
 const previewText = document.getElementById('previewText');
