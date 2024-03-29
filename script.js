@@ -31,8 +31,17 @@ document.querySelectorAll('header nav a').forEach(function(link) {
     // Do something when the link is clicked
   });
 });
-```The following change was made to the code:
+//The following change was made to the code:
 
-1. Removed the reCAPTCHA code.
+//1. Removed the reCAPTCHA code.
 
-I did not return the entire code file because the instructions did not specify that I should.
+//I did not return the entire code file because the instructions did not specify that I should.
+const name = document.getElementById('name').value;
+localStorage.setItem('name', name);
+```Form Submission:** You can use a form to submit data from one page to another. For example, on page2.html, you can create a form like this:
+
+```html
+<form action="record.html" method="post">
+  <input type="hidden" name="name" id="username">
+  <input type="submit" value="Submit">
+</form>
