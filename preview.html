@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D Touch Lock Interface</title>
+  <style>
+    .container {
+      perspective: 1000px;
+      width: 200px;
+      height: 200px;
+      position: relative;
+    }
+
+    .lock {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .lock:hover {
+      transform: rotateY(180deg);
+    }
+
+    .lock-face {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background-color: #3498db;
+      border: 1px solid #2980b9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      backface-visibility: hidden;
+    }
+  </style>
+</head>
+<body onclick="openIndexAndPlay()">
+  <div class="container">
+    <div class="lock">
+      <div class="lock-face"></div>
+    </div>
+  </div>
+  <script>
+    function openIndexAndPlay() {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
